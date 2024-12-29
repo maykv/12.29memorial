@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024년 12월 29일 제주항공 2216편 추모 사이트</title>
+    <style>
+        @import url('https://fonts.googleapis.com/earlyaccess/nanummyeongjo.css');
+
+        body {
+            font-family: 'Nanum Myeongjo', serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .message {
+            background: #000;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .message h2 {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .flower {
+            margin: 1rem auto;
+            width: 160px;
+            height: 160px;
+            background: url('./ribbon.png') no-repeat center;
+            background-size: contain;
+        }
+
+        .details {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .sns-buttons {
+            margin-top: 2rem;
+        }
+
+        .sns-buttons button {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .sns-buttons button:hover {
+            background: #555;
+        }
+
+        .sns-buttons i {
+            margin-right: 0.5rem;
+        }
+
+        footer {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 1rem;
+            }
+            .message {
+                padding: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="message">
+            <h2>삼가 고인의 명복을 빕니다</h2>
+            <div class="flower"></div>
+            <p>
+            12월 29일, 그날의 하늘은 너무도 차갑고 잔인하게 열렸습니다. <br>
+            휴일을 맞아 일상의 무게에서 잠시 벗어나, 돌아오던 길에 그들은 그저 평범한 날처럼 여겼을 것입니다. <br>
+            하지만 그날, 그들의 고요한 발걸음은 결코 다시 돌아오지 못할 길로 향했고, 그들의 소중한 생명은 바람 속으로 사라졌습니다. <br>
+            우리는 그들의 목숨이 얼마나 고귀하고, 얼마나 값지게 빛났는지 목도할 수밖에 없었습니다. <br>
+            한 사람, 한 사람의 생명이 그토록 소중한데, 그들의 마지막 순간은 너무도 고통스럽고 무서운 순간이었을 것입니다. <br>
+            그들은 우리가 상상할 수 없는 순간을 살아가며, 한 줄기 빛을 따라 싸워왔지만, 결국 그 빛은 스스로를 내어주었습니다. <br>
+            그들이 잃은 목숨은 단순히 죽음의 순간을 넘어서, 우리가 여전히 살아가는 이 순간 속에 녹아들어 존재합니다. <br>
+            우리는 그들의 생명이 가졌던 무게를 되새기며, 그들이 남긴 모든 흔적을 잊지 않겠습니다. <br>
+            그들의 소중한 생명이 이렇게 꺼졌다는 사실이 너무도 슬프고 아프지만, 그들은 우리의 기억 속에서 여전히 살아 있을 것입니다. <br>
+            오늘 그들의 고귀한 목숨에 다시 한 번 깊은 경의를 표하며, 명복을 빕니다. <br>
+            </p>
+            <p>이번 참사로 소중한 생명을 잃으신 모든 분들께 깊은 애도를 표합니다.<br>
+                유가족분들께서는 상상할 수 없는 고통과 슬픔 속에 계실 것입니다.<br>
+                이번 사고로 희생된 모든 분들의 명복을 빕니다.<br>
+                그들의 영혼이 평안히 잠들 수 있기를 기도하며,<br>
+                남은 이들이 겪고 있는 아픔이 조금이나마 덜어지길 바랍니다.</p>
+            <div class="details">
+                <p>탑승 인원<br>
+                승객: 175명<br>
+                승무원: 6명</p>
+                <p>사망자<br>
+                승객 175명 중 <strong>175</strong>명 전원 별세<br>
+                승무원 <strong>4</strong>명 별세</p>
+            </div>
+        </div>
+
+        <script src="https://utteranc.es/client.js"
+                repo="maykv/12.29memorial"
+                issue-term="pathname"
+                label="추모 댓글"
+                theme="github-dark"
+                crossorigin="anonymous"
+                async>
+        </script>
+    </main>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        function shareSNS(platform) {
+            const url = window.location.href;
+            let shareURL = '';
+
+            if (platform === 'facebook') {
+                shareURL = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+            } else if (platform === 'twitter') {
+                shareURL = `https://twitter.com/intent/tweet?url=${url}&text=2024%EB%85%84%2012%EC%9B%94%2029%EC%9D%BC%20%EC%A0%9C%EC%A3%BC%ED%95%AD%EA%B3%B5%202216%ED%8E%B8%20%EC%B6%94%EB%AA%A8`;
+            } else if (platform === 'instagramStory') {
+                alert('Instagram 스토리 공유는 모바일 앱에서만 가능합니다. URL을 복사하여 사용하세요.');
+            } else if (platform === 'instagramPost') {
+                alert('Instagram 게시물 공유는 모바일 앱에서만 가능합니다. URL을 복사하여 사용하세요.');
+            }
+
+            if (shareURL) {
+                window.open(shareURL, '_blank');
+            }
+        }
+    </script>
+</body>
+</html>
